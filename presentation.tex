@@ -45,6 +45,9 @@ numbers=left}
 % Sets the color for the \alert{} text
 \setbeamercolor{alerted text}{fg=blue}
 
+% Sets the continuation text for frametitle, in case of framebreaks
+\setbeamertemplate{frametitle continuation}[from second]
+
 % Presentation information
 \title[Linux Orientation Workshop -- \insertframenumber/\inserttotalframenumber]{Linux Orientation Workshop \vspace{.20cm} \hrule}
 \subtitle{For Second Year Computer Engineering Students}
@@ -63,7 +66,7 @@ Prathamesh Sonpatki (VIT, Alumni)}
 \frame{\maketitle}
 
 % Create table of contents
-\frame{\frametitle{Outline}\tableofcontents}
+\frame[allowframebreaks]{\frametitle{Outline}\tableofcontents}
 
 \section{Linux Basics}
 \subsection{What is Linux}
