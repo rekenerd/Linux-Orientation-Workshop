@@ -144,6 +144,8 @@ numbers=left}
 }
 \frame{\frametitle{Special Symbols}
 	\begin{itemize}
+		\item \alert{*} : All files
+		\item \alert{\textbackslash} : Escape Character
 		\item \alert{\~{}} : Home
 		\item \alert{.} : Current Directory
 		\item \alert{.{.}} : Parent Directory
@@ -177,6 +179,23 @@ numbers=left}
 }
 \frame{\frametitle{Code}
 	\lstinputlisting [language=c] {code/sum.c}
+}
+\subsection{Compile and Run}
+\frame{\frametitle{Compile and Run}
+	\begin{itemize}
+		\item Command to use: gcc
+		\item Syntax: gcc [options] input\_file.c
+		\item Options
+		\begin{itemize}
+			\item -o : Output File
+			\item -Wall : Show all warnings
+			\item -c : Compile Only
+		\end{itemize}
+		\item Example \\
+			\alert {\$ gcc -o sum sum.c}
+		\item Run \\
+			\alert {\$ ./sum}
+	\end{itemize}
 }
 \section{Debugging Programs}
 \subsection{One}
