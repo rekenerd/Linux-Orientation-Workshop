@@ -29,11 +29,11 @@
 \setbeamercolor{alerted text}{fg=blue}
 
 % Presentation information
-\title[SHORT TITLE -- \insertframenumber/\inserttotalframenumber]{FULL TITLE \vspace{.20cm} \hrule}
-\subtitle{SUB-TITLE}
-\author[\copyright 2011, AUTHOR]{AUTHOR}
-\institute{INSTITUTE}
-\date{\tiny DATE}
+\title[Linux Orientation Workshop -- \insertframenumber/\inserttotalframenumber]{Linux Orientation Workshop \vspace{.20cm} \hrule}
+\subtitle{For Second Year Computer Engineering Students}
+\author[\copyright 2012, Reverse Bit Coders]{Akshay Mankar, Abdulkarim Memon, Imran Ahmed, Miheer Vaidya, Prathamesh Sonpatki}
+\institute{Reverse Bit Coders}
+\date{\tiny 27th Jun 2012}
 
 \begin{document}
 
@@ -43,20 +43,50 @@
 % Create table of contents
 \frame{\frametitle{Outline}\tableofcontents}
 
-\section{First}
-\subsection{Sub-First}
-\frame{\frametitle{Sub-First}
+\section{Linux Basics}
+\subsection{What is Linux}
+\frame{\frametitle{What is Linux}
   \begin{itemize}
-    \item \alert{Item List}
-    \item With highlighted \alert{alerts}
+    \item Linux is a \alert {Unix-like} computer \alert {operating system} assembled under the model of \alert {free and open source software} development and distribution.\footnotemark
+    \item Available in various \alert{Distros} bundled with various other free software
+    \begin{itemize}
+    	\item Ubuntu
+    	\item Fedora
+    	\item Linux Mint
+    	\item ...
+    \end{itemize}
+    \item Started by \alert{Linus Torvalds} in 1991
+  \end{itemize}
+  \footnotetext {http://en.wikipedia.org/wiki/Linux}
+}
+
+\subsection{The Filesystem}
+\frame{\frametitle{The Filesystem}
+  \begin{itemize}
+  	\item Follows \alert {Filesystem Hierarchy Standard (FHS)}
+  	\item \alert {/} : Root directory of entire filesystem
+  	\item \alert {/bin} : Essential command binaries
+  	\item \alert {/dev} : Essential Devices
+  	\item \alert {/etc} : System wide configurations
+  	\item \alert {/home} : User's home directories
+  	\item \alert {/lib} : Libraries essential for binaries
+  	\item \alert {/media} : Mount points for removable media
+  	\item \alert {/mnt} : Temporary mounted filesystems
+  	\item \alert {/opt} : Optional Applications
+  	\item \alert {/root} : Home directory for root user
+  	\item \alert {/sbin} : Essential System Binaries
+  	\item \alert {/tmp} : Temporary files
+  	\item \alert {/usr} : Secondary hierarchy for read-only user data
+  	\item \alert {/var} : Variable Files
   \end{itemize}
 }
-
-\subsection{Sub-Second}
-\frame{\frametitle{Sub-Second}
-  Next sub-section
+\frame{\frametitle{Screenshot}
 }
 
+\subsection{three}
+\frame{\frametitle{three}
+	
+}
 \section{Second}
 \subsection{Sub-First}
 \frame{\frametitle{Second}
