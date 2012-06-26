@@ -48,7 +48,7 @@ numbers=left}
 % Presentation information
 \title[Linux Orientation Workshop -- \insertframenumber/\inserttotalframenumber]{Linux Orientation Workshop \vspace{.20cm} \hrule}
 \subtitle{For Second Year Computer Engineering Students}
-\author[\copyright 2012, Reverse Bit Coders]{Abdulkarim Memon, Akshay Mankar, Imran Ahmed, Miheer Vaidya, Prathamesh Sonpatki}
+\author[\copyright 2012]{Abdulkarim Memon, Akshay Mankar, Imran Ahmed, Miheer Vaidya, Prathamesh Sonpatki}
 \institute{Vishwakarma Institute of Information Technology}
 \date{\tiny 27th Jun 2012}
 
@@ -138,8 +138,8 @@ numbers=left}
 		\item \alert {rm} : Remove Files
 		\item \alert {cat} : Concatenate files and print
 		\item \alert {touch} : Change file timestamps
-		\item \alert {man} : Read reference manuals
 		\item \alert {less} : View files
+		\item \alert {man} : Read reference manuals
 	\end{itemize}
 }
 \frame{\frametitle{Special Symbols}
@@ -198,9 +198,71 @@ numbers=left}
 	\end{itemize}
 }
 \section{Debugging Programs}
-\subsection{}
+\subsection{Introduction}
 \frame{\frametitle{Debugging Programs}
-
+	\begin{itemize}
+		\item Debugger used: GNU Debugger (gdb)
+		\item Required For Debugging:
+		\begin{itemize}
+			\item \alert {CPU Instructions} : Required to execute
+			\item \alert {Symbol Table} : Required to map higher level code with binary instructions
+		\end{itemize}
+		\item \alert {\$ gcc -o sum sum.c} will generate only Binary Executable
+		\item Use option \alert {-g } to generate binary with symbol table
+		\item So the command is\\
+		\alert {\$ gcc -g -o sum sum.c}
+		\item Start the Debugger by\\
+		\alert {\$ gdb sum}
+	\end{itemize}
+}
+\subsection{Debugger Operations}
+\frame{\frametitle{Debugger Operations}
+	\begin{itemize}
+		\item \alert {break} : Set Breakpoints
+		\item \alert {run} : Start Execution
+		\item \alert {step} : Step into
+		\item \alert {next} : Step over
+		\item \alert {print} : Evaluate an expression
+		\item \alert {display} : Set Watch
+		\item \alert {undisplay} : Unset Watch
+		\item \alert {continue} : Continue to next breakpoint or till end of program
+	\end{itemize}
+}
+\subsection{Debug Tricks}
+\frame{\frametitle{Debug Tricks}
+	\begin{itemize}
+		\item \alert b = break
+		\item \alert r = run
+		\item \alert s = step
+		\item \alert n = next
+		\item \alert p = print
+		\item Enter \alert{blank command} to repeat last command
+		\item Get help:\\
+		\alert {http://sourceware.org/gdb/current/onlinedocs/gdb/}
+	\end{itemize}
+}
+\subsection{ddd}
+\frame{\frametitle{DDD - Data Display Debugger}
+	\begin{itemize}
+		\item A Simple to use GUI for gdb.
+		\item Also has gdb shell to support programmers
+	\end{itemize}
+}
+\frame{\frametitle{DDD - Data Display Debugger}
+	\begin{figure}[htp]
+		\centering
+		\includegraphics[scale=0.5]{images/ddd.png}
+	\end{figure}
+}
+\section{Communication Guidelines}
+\subsection{Mailing Lists}
+\frame{\frametitle{Mailing Lists}
+}
+\subsection{IRC}
+\frame{\frametitle{IRC}
+}
+\subsection{Forums}
+\frame{\frametitle{Forums}
 }
 % Ending slide is title page again
 \section*{}
