@@ -13,6 +13,7 @@
 \usepackage{multimedia}
 \usepackage{hyperref}
 \usepackage{setspace}
+\usepackage{verbatim}
 
 % Set up Beamer theme
 \usetheme{Dresden}
@@ -31,8 +32,8 @@
 % Presentation information
 \title[Linux Orientation Workshop -- \insertframenumber/\inserttotalframenumber]{Linux Orientation Workshop \vspace{.20cm} \hrule}
 \subtitle{For Second Year Computer Engineering Students}
-\author[\copyright 2012, Reverse Bit Coders]{Akshay Mankar, Abdulkarim Memon, Imran Ahmed, Miheer Vaidya, Prathamesh Sonpatki}
-\institute{Reverse Bit Coders}
+\author[\copyright 2012, Reverse Bit Coders]{Abdulkarim Memon, Akshay Mankar, Imran Ahmed, Miheer Vaidya, Prathamesh Sonpatki}
+\institute{Vishwakarma Institute of Information Technology}
 \date{\tiny 27th Jun 2012}
 
 \begin{document}
@@ -81,25 +82,84 @@
   \end{itemize}
 }
 \frame{\frametitle{Screenshot}
+	\begin{figure}[htp]
+		\centering
+		\includegraphics[scale=0.5]{images/Filesystem.png}
+		%\caption{}
+		%\label{}
+	\end{figure}
 }
 
-\subsection{three}
-\frame{\frametitle{three}
-	
+\subsection{Shell}
+\frame{\frametitle{Shell}
+	\begin{itemize}
+		\item Interface between user and kernel
+		\item Can be \alert {command line} (eg. Bash, Csh, Zsh, etc.) or can be \alert {graphical} (eg. Gnome, KDE, etc.) 
+	\end{itemize}
+	\begin{figure}[htp]
+		\centering
+		\includegraphics[scale=0.3]{images/bash.png}
+		\caption {Bash}
+	\end{figure}
 }
-\section{Second}
-\subsection{Sub-First}
-\frame{\frametitle{Second}
-  New section
+\begin{comment}
+\frame{\frametitle{Bash}
+	\begin{itemize}
+		\item Bourne Again SHell
+		\item Command Line Interface
+	\end{itemize}
+}
+\end{comment}
+\subsection{Basic Commands}
+\frame{\frametitle{Basic Commands}
+	\begin{itemize}
+		\item \alert {ls} : List files and directories
+		\item \alert {cd} : Change Directory
+		\item \alert {pwd} : Print Working Directory
+		\item \alert {mkdir} : Make Directory
+		\item \alert {cp} : Copy Files
+		\item \alert {mv} : Move Files
+		\item \alert {rm} : Remove Files
+		\item \alert {cat} : Concatenate files and print
+		\item \alert {touch} : Change file timestamps
+		\item \alert {man} : Read reference manuals
+		\item \alert {less} : View files
+	\end{itemize}
+}
+\frame{\frametitle{Special Symbols}
+	\begin{itemize}
+		\item \alert{\~{}} : Home
+		\item \alert{.} : Current Directory
+		\item \alert{.{.}} : Parent Directory
+	\end{itemize}
+}
+\frame{\frametitle{Redirection}
+	\begin{itemize}
+		\item \alert{\textless} and \alert{\textgreater} : Redirect
+		\item \alert{\textless\textless} and \alert{\textgreater\textgreater} : Append
+		\item \alert{\textbar} : Pipe
+	\end{itemize}
+}
+\section{Writing Programs}
+\subsection{What We Need}
+\frame{\frametitle{What We Need}
+	\begin{itemize}
+		\item \alert {Editor} : gedit, kate, vim, emacs.
+		\item \alert {Compiler} : GNU Compiler Collection (gcc)
+		\item \alert {Debugger} : GNU Debugger (gdb)
+	\end{itemize}
 }
 
 \subsection{Sub-Second}
 \frame{\frametitle{Sub-Second}
   Next sub-section
 }
-
+\section{Debugging Programs}
+\subsection{One}
+\frame{\frametitle{One}
+	Akshay
+}
 % Ending slide is title page again
 \section*{}
 \frame{\titlepage}
-
 \end{document}
